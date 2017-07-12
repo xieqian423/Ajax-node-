@@ -5,12 +5,12 @@
     <title>测试</title>
 </head>
 <body>
-    <div id="content"></div>
+    <script type="text/javascript" src="jsonp.js"></script>
     <script>
         function test(data){
             alert(data.name);
         };
+        createJsonp("http://127.0.0.1:8888/","test");
     </script>
-    <script src="http://127.0.0.1:8888/jsonp?callback=test"></script>
 </body>
 </html>
